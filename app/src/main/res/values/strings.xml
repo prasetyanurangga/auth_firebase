@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Auth Firebase</string>
+    <string name="id_klien_web_google">821073563048-mcaetulkvqhsraco70mvc5kj8k5ht213.apps.googleusercontent.com</string>
+    <string name="facebook_app_id" tools:ignore="ExtraTranslation">3115721421826191</string>
+    <string name="fb_login_protocol_scheme" tools:ignore="ExtraTranslation">fb3115721421826191</string>
+</resources>
