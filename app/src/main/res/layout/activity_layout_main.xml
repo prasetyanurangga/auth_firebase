@@ -5,60 +5,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".MainActivity">
-
-        <androidx.cardview.widget.CardView
-                app:cardElevation="5dp"
-                android:layout_centerHorizontal="true"
-                android:layout_above="@id/btn_sig"
-                android:paddingBottom="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="match_parent">
-                <TextView
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:id="@+id/txt_name"
-                        android:layout_height="wrap_content"/>
-                <TextView
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:id="@+id/txt_from"
-                        android:layout_height="wrap_content"/>
-                <TextView
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:id="@+id/txt_is_login"
-                        android:layout_height="wrap_content"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
         <Button
                 android:text="Sign In with Google"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/btn_sig"
                 android:layout_centerInParent="true"
         />
-        <Button
-                android:layout_below="@id/btn_sig"
-                android:layout_centerHorizontal="true"
-                android:text="Sign out"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_so"
-                android:layout_centerInParent="true"
-        />
+
+    <Button
+            android:text="Sign In with Github"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_sig"
+            android:id="@+id/btn_sigit"
+            android:layout_centerInParent="true"
+    />
+
+    <Button
+            android:text="Sign In with Twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_above="@id/btn_sig"
+            android:id="@+id/btn_sitwit"
+            android:layout_centerInParent="true"
+    />
 
         <com.facebook.login.widget.LoginButton
-            android:layout_below="@id/btn_so"
+            android:layout_below="@id/btn_sigit"
             android:id="@+id/btn_sif"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp" />
+
+
 
 </RelativeLayout>
